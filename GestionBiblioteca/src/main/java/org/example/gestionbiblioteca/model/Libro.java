@@ -1,6 +1,7 @@
-package org.example.gestionbiblioteca;
+package org.example.gestionbiblioteca.model;
 
 import lombok.*;
+import org.example.gestionbiblioteca.enums.EstadoLibro;
 
 @Data
 @NoArgsConstructor
