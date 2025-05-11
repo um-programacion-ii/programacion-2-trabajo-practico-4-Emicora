@@ -1,4 +1,4 @@
-package org.example.gestionbiblioteca;
+package org.example.gestionbiblioteca.enums;
 
 public enum EstadoLibro {
     DISPONIBLE,
