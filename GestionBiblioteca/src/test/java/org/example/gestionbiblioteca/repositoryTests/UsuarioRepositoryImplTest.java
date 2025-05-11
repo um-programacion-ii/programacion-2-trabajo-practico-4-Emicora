@@ -17,6 +17,13 @@ class UsuarioRepositoryImplTest {
     }
 
     @Test
+    void existsById_retornaTrueYFalse() {
+        Usuario u = repo.save(new Usuario(null, "X", "x@mail", "ACTIVO"));
+        assertTrue(repo.existsById(u.getId()));
+        assertFalse(repo.existsById(999L));
+    }
+
+    @Test
     void save_asignaIdYGuarda() {
         Usuario u = new Usuario(null, "Juan", "juan@mail", "ACTIVO");
         Usuario saved = repo.save(u);
