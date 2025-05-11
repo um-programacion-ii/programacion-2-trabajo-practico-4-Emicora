@@ -5,6 +5,7 @@ import org.example.gestionbiblioteca.model.Libro;
 import java.util.*;
 
 public interface LibroService {
+    Libro buscarPorId(Long id);
     Libro buscarPorIsbn(String isbn);
     List<Libro> obtenerTodos();
     Libro guardar(Libro libro);

@@ -21,7 +21,12 @@ public class LibroController {
 
     @GetMapping("/{id}")
     public Libro obtenerPorId(@PathVariable Long id) {
-        return libroService.buscarPorIsbn(id.toString());
+        return libroService.buscarPorId(id);
+    }
+
+    @GetMapping("/isbn/{isbn}")
+    public Libro obtenerPorIsbn(@PathVariable String isbn) {
+        return libroService.buscarPorIsbn(isbn);
     }
 
     @PostMapping
